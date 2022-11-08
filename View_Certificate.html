@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Mentoring Support System</title>
+    <link href="/Content/css?v=zDzr6-EuGEENCtZE42cd2ookqRxrYyJBJU4prLfkpNw1" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script src="/bundles/jquery?v=rnc0vFa7f69BtWCBkAje1Y-CltHVQIuk1cW_mJXAf8U1"></script>
+
+    <script src="/bundles/bootstrap?v=hIZoa6svwFD-t-5j_KFuc2NYqnbvG4fBUMCaOG8R6T41"></script>
+
+    
+    <meta name="google-signin-client_id" content="444435153466-k2fq27tfnlijqnbq3ds1tcdbhmaeavns.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    
+    <script src="/Content/Scripts/Google.js"></script>
+    <script src="/Content/Scripts/HoldOn.js"></script>
+
+
+    <style>
+        .form-group {
+            padding: 3px;
+            margin: 10px;
+        }
+
+        .form-control {
+            height: 32px;
+            width: 180px;
+
+           
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        .navbar-inverse {
+            background-color: #0e5ba9;
+            border-color: #0e5ba9;
+            color:#FFFFFF;
+        }
+        .navbar-inverse .navbar-brand {
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style=" background-color: #0e5ba9;
+            border-color: #0e5ba9;
+            color:#FFFFFF;">
+        <div class="container">
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="/" style="color:#FFFFFF">FPT Education on Coursera - Mentoring Support System</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="/Certificates?Length=4" style="color:#FFFFFF">Welcome: mytthe153136@fpt.edu.vn</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">                        
+                        <li><a href="/Login/Logout" onclick="signOut();" style="color:#FFFFFF">Logout</a></li>
+
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+
+        
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<br />
+<span><a href="/">Home</a> > Certificates</span>
+<hr />
+<h3 style="text-align: center; color:green;">Certificates</h3>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            HoldOn.open({
+                message: 'Please wait...',
+                theme: "sk-circle"
+            });
+            $.ajax(
+                {
+                    url: '/Certificates/Save',
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    contentType: false,
+                    processData: false,
+                    success: function (data) {
+                    }
+                }).done(function () {
+                    HoldOn.close();
+                });
+        });
+        });
+</script>
+<form action="/Certificates/Save" method="post">        <table class="table table-bordered">
+            <thead style="background: #f5f5f5;">
+                <tr>
+                    <th style="width:30%">Subject Name</th>
+                    <th style="width:30%">Course Name</th>
+                    <th>Enter Coursera link</th>
+                    <th style="width:3%">View</th>
+                    <th style="width:15%">Verification Log</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Promote the Ethical Use of Data-Driven Technologies</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/8f7a95c9030518037bb4adea3793d399" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/8f7a95c9030518037bb4adea3793d399')"></i>
+
+                        </td>
+                        <td>
+							<!--
+invalid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Turn Ethical Frameworks into Actionable Steps</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/ef1b480b1ccaadb0a46e125667638f4f" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/ef1b480b1ccaadb0a46e125667638f4f')"></i>
+
+                        </td>
+                        <td>
+							<!--
+invalid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Detect and Mitigate Ethical Risks</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/f40b6127701b031488bca0050e7ad475" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/f40b6127701b031488bca0050e7ad475')"></i>
+
+                        </td>
+                        <td>
+							<!--
+valid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Communicate Effectively about Ethical Challenges in Data-Driven Technologies</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/22795c2e1e407b496c7e57f3c9517e3f" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/22795c2e1e407b496c7e57f3c9517e3f')"></i>
+
+                        </td>
+                        <td>
+							<!--
+valid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Create and Lead an Ethical Data-Driven Organization</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/eddea07b09406f685b3a5d7e7528b172" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/eddea07b09406f685b3a5d7e7528b172')"></i>
+
+                        </td>
+                        <td>
+							<!--
+valid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td>Preparing for Your CertNexus Certification Exam</td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/17990ae23b53eb5a14921e040e416334" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/17990ae23b53eb5a14921e040e416334')"></i>
+
+                        </td>
+                        <td>
+							<!--
+valid
+							-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CertNexus Certified Ethical Emerging Technologist Professional Certificate</td>
+                                <td><b>CertNexus Certified Ethical Emerging Technologist Professional Certificate</b></td>
+
+                        <td><input class="form-control" id="CourseN" name="CourseN" style="width: 100%;max-width: 100%;" type="text" value="https://coursera.org/share/30502bac64c7ff4a006c0ed80817a5da" /></td>
+                        <td>
+                                    <i class="icon-eye-open" onclick="window.open('https://coursera.org/share/30502bac64c7ff4a006c0ed80817a5da')"></i>
+
+                        </td>
+                        <td>
+							<!--
+invalid
+							-->
+                        </td>
+                    </tr>
+
+            </tbody>
+
+        </table>
+        <input class="btn btn-primary" id="btn" type="submit" value="Save" />
+    <br />
+    <span style="color: red;"></span>
+    <br />
+</form>
+        <hr />
+        <footer>
+        <p>&copy; 2022 - FPT Education | <a href="/About">About us</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
